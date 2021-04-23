@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="smartMode">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../smartMode/out/artifacts/smartMode_jar/smartMode.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

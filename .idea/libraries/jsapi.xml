@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="jsapi">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/Travail Collaboratif/this/sphinx4-0.1alpha/lib/jsapi.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/Travail Collaboratif/this/sphinx4-0.1alpha/lib/sphinx4.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/Travail Collaboratif/this/sphinx4-0.1alpha/lib/TIDIGITS_8gau_13dCep_16k_40mel_130Hz_6800Hz.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/Travail Collaboratif/this/sphinx4-0.1alpha/lib/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

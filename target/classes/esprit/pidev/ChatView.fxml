@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="514.0" prefWidth="728.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esprit.pidev.ChatView">
+   <children>
+      <Label layoutX="32.0" layoutY="106.0" />
+      <ListView fx:id="listView" layoutX="244.0" layoutY="60.0" prefHeight="337.0" prefWidth="456.0" />
+      <TextArea fx:id="textAreaMessage" layoutX="244.0" layoutY="406.0" prefHeight="93.0" prefWidth="363.0" promptText="Tapez un message" />
+      <VBox layoutX="22.0" layoutY="61.0" prefHeight="438.0" prefWidth="212.0" style="-fx-background-color: #1B76D7;">
+         <children>
+            <ComboBox fx:id="listStudents" prefWidth="150.0" promptText="liste des étudiants" style="-fx-background-color: #fff;">
+               <VBox.margin>
+                  <Insets left="25.0" top="10.0" />
+               </VBox.margin>
+            </ComboBox>
+         </children>
+      </VBox>
+      <Button fx:id="sendButton" layoutX="620.0" layoutY="406.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="95.0" style="-fx-background-color: transparent; -fx-border-color: #1B76D7; -fx-border-radius: 20;" text="Envoyer" />
+      <HBox alignment="CENTER_RIGHT" layoutX="22.0" layoutY="14.0" prefHeight="44.0" prefWidth="679.0" style="-fx-background-color: #1B76D7;">
+         <children>
+            <Label fx:id="currentUserName" prefHeight="21.0" prefWidth="175.0" text="Label" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="50.0" right="200.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="connectButton" mnemonicParsing="false" onAction="#onConnectButton" prefHeight="25.0" prefWidth="180.0" text="Connecter">
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="deconnectButton" layoutX="607.0" layoutY="20.0" mnemonicParsing="false" onAction="#onDeconnectButton" prefHeight="25.0" prefWidth="185.0" text="déconnecter">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets right="30.0" />
+         </padding>
+      </HBox>
+      <ImageView fx:id="remoteControl" fitHeight="54.0" fitWidth="56.0" layoutX="647.0" layoutY="445.0" onMouseClicked="#remoteControlButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../connection.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

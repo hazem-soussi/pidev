@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esprit.pidev.ListMyRegistrations">
+    <children>
+        <Label layoutX="252.0" layoutY="25.0" text="Liste Des Formations" textFill="#1b76d7">
+            <font>
+                <Font size="24.0" />
+            </font>
+            <padding>
+                <Insets bottom="30.0" />
+            </padding>
+        </Label>
+        <TableView fx:id="table" layoutX="175.0" layoutY="105.0" prefHeight="399.0" prefWidth="807.0" style="-fx-background-color: DarkSeaGreen;" stylesheets="@style.css">
+            <columns>
+                <TableColumn fx:id="nomFormation" prefWidth="130.0" styleClass="nomCours" text="Nom de Formation" />
+                <TableColumn fx:id="categorieFormation" prefWidth="125.0" styleClass="rows" text="categorie" />
+                <TableColumn fx:id="descFormation" prefWidth="143.0" styleClass="rows" text="description" />
+                <TableColumn fx:id="dureeFormation" prefWidth="240.0" styleClass="rows" text="duree" />
+                <TableColumn fx:id="prixFormation" minWidth="4.0" prefWidth="168.0" styleClass="rows" text="prix" />
+            </columns>
+        </TableView>
+        <TextField fx:id="findFormation" layoutX="480.0" layoutY="25.0" prefHeight="36.0" prefWidth="246.0" promptText="Trouver Votre Formation" />
+      <ImageView fitHeight="93.0" fitWidth="139.0" layoutX="44.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Informatique-Formation-logo-taille-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="189.0" layoutX="893.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo-formation-informatique-521x264.jpg" />
+         </image>
+      </ImageView>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</AnchorPane>
